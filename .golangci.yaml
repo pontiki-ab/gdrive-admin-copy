@@ -1,0 +1,25 @@
+linters:
+  # See available linter here. https://golangci-lint.run/usage/linters/
+  enable-all: true
+  disable:
+
+    # annoying:
+    - exhaustruct
+    - depguard
+    - forbidigo
+    - funlen
+    - gci
+    - err113
+    - govet
+    - lll
+    - nlreturn
+    - wsl
+    - godox
+    - perfsprint
+    - varnamelen
+
+    # enable once the replace directive is no longer needed in go.mod.
+    - gomoddirectives
+
+  run:
+    modules-download-mode: vendor
