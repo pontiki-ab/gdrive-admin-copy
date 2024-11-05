@@ -47,7 +47,7 @@ Fret not! This program will help you copy those files to a folder owned by the O
 
 1. Clone this repository
 2. Make sure you have Golang 1.23 installed
-3. Run `go mod download` in the repository folder
+3. Run `go mod vendor` in the repository folder, to pull in dependencies
 4. Run
    `go run . -credentials /path/to/your/credentials.json -admin your-admin-user@domain.com -skip-user-substr user-to-skip@domain.com,@some-other-domain.com,@some-part-of-a-domain`
 5. Wait. This will take a (long) time. Make sure your computer doesn't go to sleep and that the screensaver doesn't turn
